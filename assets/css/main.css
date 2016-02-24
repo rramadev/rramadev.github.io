@@ -451,4 +451,12 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+img.img-circle {
+  float: right;
+  margin: 0 60px 0;
+  border-radius: 50%; 
+  opacity: 0.6;
+  box-shadow: 5px 5px 10px #888888;
+}
  
