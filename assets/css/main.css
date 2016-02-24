@@ -425,8 +425,8 @@ body {
 /* Custom */
 
 header {
-  height: 850px; 
-  background: url(../img/204H.jpg) center center;
+  height: 600px; 
+  background: url(../img/227H.jpg) center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -438,9 +438,17 @@ header h1  {
     padding: 30px 50px 0 0;
 }
 
-pre {	
-	font-size: 18px;	
+header pre {	
+	font-size: 14px;	
     position: absolute;
-    top: 20px;
-    left: 20px;    	
+    top: 0px;
+    left: 0px;    	
 }
+
+section {
+  height: 800px; 
+  background: url(../img/263H.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+ 
