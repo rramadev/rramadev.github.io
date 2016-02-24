@@ -23,11 +23,8 @@ html {
   -webkit-text-size-adjust: 100%; }
 
 body {
-  margin: 0; 
-  background: url(../img/204H.jpg) center center;
-  background-size: cover; 
-  
- }
+  margin: 0;  
+}
 
 article,
 aside,
@@ -423,3 +420,27 @@ body {
     margin-bottom: 50px; }
     .page-home article:last-child {
       margin-bottom: 0px; }
+      
+
+/* Custom */
+
+header {
+  height: 850px; 
+  background: url(../img/204H.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+ 
+header h1  {
+ 	text-align: right;
+ 	font-size: 16px;
+    font-weight: 600;
+    padding: 30px 50px 0 0;
+}
+
+pre {	
+	font-size: 18px;	
+    position: absolute;
+    top: 20px;
+    left: 20px;    	
+}
