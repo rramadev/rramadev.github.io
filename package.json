@@ -11,8 +11,6 @@
     "build:sass": "node-sass --output-style compressed src/styles.scss src/styles.min.css "
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "jquery": "^3.2.1"
   },
   "devDependencies": {
     "lite-server": "^2.3.0"
