@@ -1,0 +1,25 @@
+{
+  "short_name": "rramadev",
+  "name": "Raul Rama",
+  "icons": [
+    {
+      "src": "src/assets/img/pwa/launcher-48.jpg",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "src/assets/img/pwa/launcher-96.jpg",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "src/assets/img/pwa/launcher-192.jpg",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#23507a",
+  "display": "standalone",
+  "theme_color": "#23507a"
+}
