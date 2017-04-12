@@ -1,0 +1,83 @@
+/* Custom */
+
+header.site-header {
+  position:relative;
+  /*background: url(../img/227H.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;*/
+}
+
+header h1  {
+ 	text-align: right;
+ 	font-size: 16px;
+  font-weight: 600;
+  padding: 15px 50px 0 0;
+}
+
+.particles-js-canvas-el {
+  position: fixed;
+  max-height: 200px;
+  background-color: #c1cbd4;
+  border-bottom: 2px solid #3e6487;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:-1;
+}
+.avatar {
+  position: relative;
+  z-index: 1;
+}
+
+/*section {
+  height: 800px;
+  background: url(../img/263H.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}*/
+
+img.img-circle {
+  float: right;
+  margin: 0 60px 0;
+  border-radius: 50%;
+  opacity: 0.8;
+  box-shadow: 5px 5px 10px #888888;
+  transition: all 0.3s ease-in-out;
+  transform-origin: bottom center;
+}
+
+/*img.img-circle:hover {
+    color: white;
+    animation: wiggle 0.4s linear 1;
+}*/
+
+/*@keyframes animatedBackground {
+	from { background-position: 0px 100px; }
+	to { background-position: 700px -50px; }
+	}
+	@-webkit-keyframes animatedBackground {
+	from { background-position: 20px 20px, 0 0; }
+	to { background-position: 300px -90px, 100% 0; }
+	}
+	@-ms-keyframes animatedBackground {
+	from { background-position: 20px 20px, 0 0; }
+	to { background-position: 300px -90px, 100% 0; }
+	}
+	@-moz-keyframes animatedBackground {
+	from { background-position: 20px 20px, 0 0; }
+	to { background-position: 300px -90px, 100% 0; }
+}
+
+div.anim {
+	with: 100%;
+	height: 600px;
+    background-image:  url(../img/tweeter.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+
+	animation: animatedBackground 20s linear infinite;
+	-ms-animation: animatedBackground 20s linear infinite;
+	-moz-animation: animatedBackground 20s linear infinite;
+	-webkit-animation: animatedBackground 20s linear infinite;
+}*/

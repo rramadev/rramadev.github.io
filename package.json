@@ -1,0 +1,24 @@
+{
+  "name": "rramadev-github-io",
+  "version": "1.0.0",
+  "author": "rramadev",
+  "description": "rramadev.github.io Website",
+  "license": "ISC",
+  "keywords": [],
+  "scripts": {
+    "start": "npm run server",
+    "server": "lite-server -c bs-config.json",
+    "build:sass": "node-sass --output-style compressed src/styles.scss src/styles.min.css "
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rrama-.........."
+  }
+}
