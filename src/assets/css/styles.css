@@ -2,17 +2,14 @@
 
 header.site-header {
   position:relative;
-  /*background: url(../img/227H.jpg) center center;
-  background-size: cover;
-  background-repeat: no-repeat;*/
 }
 
-header h1  {
+/*header h1  {
  	text-align: right;
  	font-size: 16px;
   font-weight: 600;
   padding: 15px 50px 0 0;
-}
+}*/
 
 .particles-js-canvas-el {
   position: fixed;
@@ -25,59 +22,88 @@ header h1  {
   left:0;
   z-index:-1;
 }
-.avatar {
-  position: relative;
-  z-index: 1;
+
+.avcard {
+    padding-top: 20px;
+    margin: 5px 0 20px 0;
+    background-color: rgba(214, 224, 226, 0.2);
+    border-top-width: 0;
+    border-bottom-width: 2px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 1px 5px #626262;
+    -moz-box-shadow: 0 1px 5px #626262;
+    box-shadow: 0 1px 5px #626262;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-/*section {
-  height: 800px;
-  background: url(../img/263H.jpg) center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}*/
-
-img.img-circle {
-  float: right;
-  margin: 0 60px 0;
-  border-radius: 50%;
-  opacity: 0.8;
-  box-shadow: 5px 5px 10px #888888;
-  transition: all 0.3s ease-in-out;
-  transform-origin: bottom center;
+.avcard.hoveravcard {
+    float: right;
+    top: 60px;
+    right: 75px;
+    position: fixed;
+    padding-top: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgba(214, 224, 226, 0.2);
 }
 
-/*img.img-circle:hover {
-    color: white;
-    animation: wiggle 0.4s linear 1;
-}*/
-
-/*@keyframes animatedBackground {
-	from { background-position: 0px 100px; }
-	to { background-position: 700px -50px; }
-	}
-	@-webkit-keyframes animatedBackground {
-	from { background-position: 20px 20px, 0 0; }
-	to { background-position: 300px -90px, 100% 0; }
-	}
-	@-ms-keyframes animatedBackground {
-	from { background-position: 20px 20px, 0 0; }
-	to { background-position: 300px -90px, 100% 0; }
-	}
-	@-moz-keyframes animatedBackground {
-	from { background-position: 20px 20px, 0 0; }
-	to { background-position: 300px -90px, 100% 0; }
+.avcard.hoveravcard .avcardheader {
+    background: url("../img/avatar-bg2.png");
+    background-size: cover;
+    height: 135px;
 }
 
-div.anim {
-	with: 100%;
-	height: 600px;
-    background-image:  url(../img/tweeter.png);
-	background-position: 0px 0px;
-	background-repeat: no-repeat;
+.avcard.hoveravcard .avatar {
+    position: relative;
+    top: -50px;
+    margin-bottom: -50px;
+}
 
-	animation: animatedBackground 20s linear infinite;
-	-ms-animation: animatedBackground 20s linear infinite;
-	-moz-animation: animatedBackground 20s linear infinite;
-	-webkit-animation: animatedBackground 20s linear infinite;
-}*/
+.avcard.hoveravcard .avatar img {
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,0.5);
+    box-shadow: 5px 5px 10px #888888;
+}
+
+.avcard.hoveravcard .info {
+    margin: 10px 0;
+    padding: 4px 8px 0px;
+}
+
+.avcard.hoveravcard .info .title {
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 1;
+    color: #262626;
+    vertical-align: middle;
+}
+
+.avcard.hoveravcard .info .desc {
+    overflow: hidden;
+    font-size: 1em;
+    line-height: 20px;
+    color: #737373;
+    text-overflow: ellipsis;
+}
+
+.avcard.hoveravcard .bottom {
+    padding: 0 20px;
+    margin-bottom: 17px;
+}
+
+.btn.avbtn { 
+  border-radius: 50%; 
+  width:32px; 
+  height:32px; 
+  line-height:18px;  
+}
