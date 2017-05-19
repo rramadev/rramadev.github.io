@@ -116,6 +116,7 @@ section.projects {
 .card {
     max-width: 300px;
     margin-bottom: 30px;
+    box-shadow: -60px 0px 100px -90px #000000, 60px 0px 100px -90px #000000;
 }
 
 .card-deck .card:not(:first-child) {
