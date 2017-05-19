@@ -103,7 +103,7 @@ header.site-header {
   border-radius: 50%; 
   width:32px; 
   height:32px; 
-  line-height:18px;  
+  line-height:20px;  
 }
 
 /*Section Projects*/
@@ -121,3 +121,12 @@ section.projects {
 .card-deck .card:not(:first-child) {
     margin-left: 0px; 
 }
+
+.card-deck .card-header {
+    background-color: #c2d6d6; 
+}
+
+.card-deck .card-footer {
+    background-color: #c2c2a3; 
+}
+
