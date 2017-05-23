@@ -1,7 +1,9 @@
-/* Custom */
+/*! 
+ * Custom Styles
+ */ 
 
 /*Header*/
-header.site-header {
+header.site-header { 
   position: relative;
 }
 
@@ -107,9 +109,14 @@ header.site-header {
 }
 
 /*Section Projects*/
-section.projects {
+#projects {
    position: relative; 
    margin-top: 400px;
+}
+
+#projects .title h3 {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
 }
 
 /*Project Card*/
@@ -131,3 +138,5 @@ section.projects {
     background-color: #c2c2a3; 
 }
 
+/*Media Queries*/
+/*@media */

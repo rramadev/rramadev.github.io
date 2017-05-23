@@ -8,11 +8,13 @@
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="shortcut icon" href="favicon.ico">  
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" 
+    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" 
+    crossorigin="anonymous">-->
   <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
     crossorigin="anonymous">-->
-  <link rel="stylesheet" href="src/assets/css/styles.css" />
+  <link rel="stylesheet" href="src/assets/css/styles.min.css" />
   <link rel="manifest" href="/manifest.json">
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -49,8 +51,11 @@
 
   </header>
 
-  <section class="projects">
+  <section id="projects">    
     <div class="container"> 
+      <div class="title">
+        <h3>List of projects on the Github repository</h3>
+      </div>      
       <div class="card-deck">
 
         <div class="card">
@@ -61,13 +66,14 @@
             <img alt="Jquery" src="src/assets/img/logo/jquerylogo.png">
             <img alt="Bootstrap" src="src/assets/img/logo/bootstraplogo.png">
           </div>
-          <img class="card-img-top" src="src/assets/img/projectbg1.jpg" width="299px" height="200px" 
+          <img class="card-img" src="src/assets/img/projectbg1.jpg" width="299px" height="200px" 
           alt="Project 1 image">
           <div class="card-block">
             <h4 class="card-title">rramadev</h4>
             <p class="card-text">
               Github Website
             </p>
+            <a href="#" class="btn btn-info btn-sm">Live demo</a>
           </div>
           <div class="card-footer">
             <small class="text-muted">Last updated on May, 2017</small>
@@ -88,7 +94,8 @@
             <h4 class="card-title">Angular Demo</h4>
             <p class="card-text">
               Store Manager App
-            </p>          
+            </p>  
+            <a href="#" class="btn btn-info btn-sm">Live demo</a>        
           </div>
           <div class="card-footer">
             <small class="text-muted">Last updated on May, 2017</small>
@@ -106,7 +113,8 @@
             <h4 class="card-title">Project 3</h4>
             <p class="card-text">
               Description
-            </p>          
+            </p>  
+            <a href="#" class="btn btn-info btn-sm">Live demo</a>        
           </div>
           <div class="card-footer">
             <small class="text-muted">Last updated on May, 2017</small>
@@ -124,7 +132,8 @@
             <h4 class="card-title">Project 4</h4>
             <p class="card-text">
               Description
-            </p>          
+            </p> 
+            <a href="#" class="btn btn-info btn-sm">Live demo</a>         
           </div>
           <div class="card-footer">
             <small class="text-muted">Last updated on May, 2017</small>
@@ -150,17 +159,17 @@
   <script src="src/assets/js/particles.min.js"></script>
   <script src="src/assets/js/app.js"></script>
   <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/sw.js').then(function(registration) {
-          // Registration was successful
-          console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        }).catch(function(err) {
-          // registration failed :(
-          console.log('ServiceWorker registration failed: ', err);
-        });
-      });
-    }
+    // if ('serviceWorker' in navigator) {
+    //   window.addEventListener('load', function() {
+    //     navigator.serviceWorker.register('/sw.js').then(function(registration) {
+    //       // Registration was successful
+    //       console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    //     }).catch(function(err) {
+    //       // registration failed :(
+    //       console.log('ServiceWorker registration failed: ', err);
+    //     });
+    //   });
+    // }
   </script>
 </body>
 </html>
