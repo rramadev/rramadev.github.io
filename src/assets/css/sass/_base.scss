@@ -24,7 +24,10 @@ html, body {
 /* Particles */
 .particles-js-canvas-el {
   position: fixed;
-  max-height: 200px;
+  max-height: 150px;
+  @media #{$medium-and-up} {
+    max-height: 200px; 
+  }
   background-color: $bleen-color-lighter;
   border-bottom: 2px solid $bleen-color-darker;
   top: 0;
@@ -38,17 +41,22 @@ html, body {
 .avcard {
   @include border-radius(10px);
   @include box-shadow(0 1px 5px $grey-color);
+  @include calc( left, '50% - 128px');
   z-index: 99;
   padding-top: 20px;
   margin: 5px 0 20px 0;  
   float: right;
-  top: 60px;
-  right: 10%;
+  top: 10px;  
   position: fixed;
   padding-top: 0;
   overflow: hidden;
   text-align: center;
   background-color: rgba($grey-color, 0.2);
+  @media #{$medium-and-up} {
+    top: 60px;
+    left: auto;
+    right: 10%;
+  }
   .avcardheader {
     background: url("#{$images-path}avatarbg.jpg");      
     background-size: cover;
@@ -62,13 +70,20 @@ html, body {
       @include border-radius(50%);
       @include box-shadow(5px 5px 10px #888888); 
       border: 5px solid rgba($white-color, 0.5);     
-      max-width: 100px;
-      max-height: 100px;                      
+      max-width: 80px;
+      max-height: 80px;  
+      @media #{$medium-and-up} {
+        max-width: 100px;
+        max-height: 100px; 
+      }                    
     }
   }
   .info {
-    margin: 10px 0;
+    margin: 5px 0;
     padding: 4px 8px 0px;
+    @media #{$medium-and-up} {
+      margin: 10px 0;
+    } 
     .title {
       margin-bottom: 8px;
       color: $blue-color-dark;
@@ -83,7 +98,10 @@ html, body {
   }
   .bottom {
     padding: 0 20px;
-    margin-bottom: 17px;
+    margin-bottom: 10px;
+    @media #{$medium-and-up} {
+      margin-bottom: 17px;
+    }
     .btn{
       border-radius: 50%;
       width: 32px;
@@ -96,7 +114,10 @@ html, body {
 /* Section Projects */
 #projects {
   position: relative;
-  margin-top: 400px;
+  margin-top: 350px;
+  @media #{$medium-and-up} {
+    margin-top: 400px;
+  }
   .title {
     margin-left: 10%;
     margin-bottom: 30px;
@@ -107,17 +128,12 @@ html, body {
 }
 
 /* Project Card */
-.card {
-  @include box-shadow(-60px 0px 100px -90px $black-color, 60px 0px 100px -90px $black-color); 
-  max-width: 300px;
-  min-width: 300px;
-  margin-bottom: 40px;
-}
-
 .card-deck {    
   .card {
-    margin-left: 10%;
-    margin-right: 0px;
+    @include box-shadow(-60px 0px 100px -90px $black-color, 60px 0px 100px -90px $black-color); 
+    max-width: 300px;
+    min-width: 250px;    
+    margin: 30px 10%;    
   }
   @media #{$medium-and-up} {
     .card:not(:first-child) {
@@ -129,11 +145,11 @@ html, body {
     }   
   }
   .card-header {
-    background-color: $bleen-color-lighter;
-    .card-img {
-      max-width: 100%;
-      height: auto;
-    }
+    background-color: $bleen-color-lighter;    
+  }
+  .card-img-top {
+    // max-width: 100%;
+    // height: auto;
   }
   .card-footer {
     background-color: $palegreen-color;
