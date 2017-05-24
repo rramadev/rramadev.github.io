@@ -1,142 +1,141 @@
-/*! 
- * Custom Styles
- */ 
+/*** Base Styles ***/ 
 
-/*Header*/
-header.site-header { 
+/* Html, body */
+* {
+	box-sizing: border-box;
+  &:before {
+  	box-sizing: border-box;
+  }
+  &:after {
+  	box-sizing: border-box;
+  }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Header */
+.site-header {
   position: relative;
 }
 
-/*Particles*/
+/* Particles */
 .particles-js-canvas-el {
   position: fixed;
   max-height: 200px;
-  background-color: #c1cbd4;
-  border-bottom: 2px solid #3e6487;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
+  background-color: $bleen-color-lighter;
+  border-bottom: 2px solid $bleen-color-darker;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: 98;
 }
 
-/*Avatar Card*/
+/* Avatar Card */
 .avcard {
-    z-index: 99;
-    padding-top: 20px;
-    margin: 5px 0 20px 0;
-    background-color: rgba(214, 224, 226, 0.2);
-    border-top-width: 0;
-    border-bottom-width: 2px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    -webkit-box-shadow: 0 1px 5px #626262;
-    -moz-box-shadow: 0 1px 5px #626262;
-    box-shadow: 0 1px 5px #626262;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.avcard.hoveravcard {
-    float: right;
-    top: 60px;
-    right: 75px;
-    position: fixed;
-    padding-top: 0;
-    overflow: hidden;
-    text-align: center;
-    background-color: rgba(214, 224, 226, 0.2);
-}
-
-.avcard.hoveravcard .avcardheader {
-    background: url("../img/avatar-bg2.png");
+  @include border-radius(10px);
+  @include box-shadow(0 1px 5px $grey-color);
+  z-index: 99;
+  padding-top: 20px;
+  margin: 5px 0 20px 0;  
+  float: right;
+  top: 60px;
+  right: 10%;
+  position: fixed;
+  padding-top: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: rgba($grey-color, 0.2);
+  .avcardheader {
+    background: url("#{$images-path}avatarbg.jpg");      
     background-size: cover;
     height: 135px;
-}
-
-.avcard.hoveravcard .avatar {
+  }
+  .avatar {
     position: relative;
     top: -50px;
     margin-bottom: -50px;
-}
-
-.avcard.hoveravcard .avatar img {
-    width: 100px;
-    height: 100px;
-    max-width: 100px;
-    max-height: 100px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    border: 5px solid rgba(255,255,255,0.5);
-    box-shadow: 5px 5px 10px #888888;
-}
-
-.avcard.hoveravcard .info {
+    img {
+      @include border-radius(50%);
+      @include box-shadow(5px 5px 10px #888888); 
+      border: 5px solid rgba($white-color, 0.5);     
+      max-width: 100px;
+      max-height: 100px;                      
+    }
+  }
+  .info {
     margin: 10px 0;
     padding: 4px 8px 0px;
-}
-
-.avcard.hoveravcard .info .title {
-    margin-bottom: 8px;
-    font-size: 24px;
-    line-height: 1;
-    color: #262626;
-    vertical-align: middle;
-}
-
-.avcard.hoveravcard .info .desc {
-    border-top: 1px solid grey;
-    overflow: hidden;
-    font-size: 1em;
-    line-height: 20px;
-    color: #737373;
-    text-overflow: ellipsis;
-}
-
-.avcard.hoveravcard .bottom {
+    .title {
+      margin-bottom: 8px;
+      color: $blue-color-dark;
+      vertical-align: middle;        
+    } 
+    .desc {
+      border-top: 1px solid $grey-color-light;
+      overflow: hidden;  
+      color: $grey-color-dark;
+      text-overflow: ellipsis;
+    }
+  }
+  .bottom {
     padding: 0 20px;
     margin-bottom: 17px;
+    .btn{
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      line-height: 20px;
+    }
+  }    
 }
 
-.btn.avbtn { 
-  border-radius: 50%; 
-  width:32px; 
-  height:32px; 
-  line-height:20px;  
-}
-
-/*Section Projects*/
+/* Section Projects */
 #projects {
-   position: relative; 
-   margin-top: 400px;
-}
-
-#projects .title h3 {
-    font-size: 1.4rem;
+  position: relative;
+  margin-top: 400px;
+  .title {
+    margin-left: 10%;
     margin-bottom: 30px;
+    @media #{$medium-and-up} {
+      margin-left: 0px;
+    }
+  }
 }
 
-/*Project Card*/
+/* Project Card */
 .card {
-    max-width: 300px;
-    margin-bottom: 30px;
-    box-shadow: -60px 0px 100px -90px #000000, 60px 0px 100px -90px #000000;
+  @include box-shadow(-60px 0px 100px -90px $black-color, 60px 0px 100px -90px $black-color); 
+  max-width: 300px;
+  min-width: 300px;
+  margin-bottom: 40px;
 }
 
-.card-deck .card:not(:first-child) {
-    margin-left: 0px; 
+.card-deck {    
+  .card {
+    margin-left: 10%;
+    margin-right: 0px;
+  }
+  @media #{$medium-and-up} {
+    .card:not(:first-child) {
+      margin-left: 0px;
+    }
+    .card:not(:last-child) {
+      margin-left: 0px;
+      margin-right: 30px;
+    }   
+  }
+  .card-header {
+    background-color: $bleen-color-lighter;
+    .card-img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .card-footer {
+    background-color: $palegreen-color;
+  }
 }
-
-.card-deck .card-header {
-    background-color: #c2d6d6; 
-}
-
-.card-deck .card-footer {
-    background-color: #c2c2a3; 
-}
-
-/*Media Queries*/
-/*@media */

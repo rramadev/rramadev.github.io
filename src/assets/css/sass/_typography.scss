@@ -1,0 +1,48 @@
+/*** Typography ***/    
+
+/* Responsive Typography */  
+html {
+  @media only screen and (min-width: 0) {
+    font-size: 14px;
+  }
+  @media only screen and (min-width: $medium-screen) {
+    font-size: 15px;
+  }
+  @media only screen and (min-width: $large-screen) {
+    font-size: 16px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media #{$small-and-down} {
+  h1 {
+    font-size: 2.1rem;        
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Small Devices, Tablets */
+// @media only screen and (min-width: 768px) {
+// }
+
+/* Medium Devices, Desktops */
+@media #{$medium-and-up} {
+  h1 {
+    font-size: 2.2rem;        
+    }
+  h2 {
+    font-size: 1.7rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Large Devices, Wide Screens */
+// @media only screen and (min-width: 1200px) {
+// }

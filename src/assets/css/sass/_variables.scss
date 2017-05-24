@@ -1,0 +1,51 @@
+/*** Variables ***/
+
+/* Images */
+$images-path: "../img/";
+
+/* Fonts */
+$fonts-path: "../fonts/";
+
+/* Colors */
+$black-color: #000000;
+$white-color: #ffffff;
+
+$blue-color: #0275d8;
+$blue-color-light: lighten($blue-color,15%);
+$blue-color-dark: darken($blue-color,15%);
+$blue-color-lighter: lighten($blue-color,30%);
+$blue-color-darker: darken($blue-color,30%);
+
+$green-color: #009933;
+$palegreen-color: #c2c2a3;
+$green-color-light: lighten($green-color,15%);
+$green-color-dark: darken($green-color,15%);
+$green-color-lighter: lighten($green-color,30%);
+$green-color-darker: darken($green-color,30%);
+
+$grey-color: #808080;
+$grey-color-light: lighten($grey-color,15%);
+$grey-color-dark: darken($grey-color,15%);
+$grey-color-lighter: lighten($grey-color,30%);
+$grey-color-darker: darken($grey-color,30%);
+
+$bleen-color: #669999;
+$bleen-color-light: lighten($bleen-color,15%);
+$bleen-color-dark: darken($bleen-color,15%);
+$bleen-color-lighter: lighten($bleen-color,30%);
+$bleen-color-darker: darken($bleen-color,30%);
+
+
+/* Media Query Ranges */
+$small-screen-up: 576px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$small-screen: 575px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;

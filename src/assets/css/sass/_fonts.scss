@@ -1,0 +1,27 @@
+/*** Fonts ***/
+
+/* Customized Font-awesome Icons */
+@font-face {
+  font-family: 'Fontawesome';  
+  src: url("#{$fonts-path}fontawesome-webfont.woff?kex1w9") format('woff');    
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+// Linkedin icon
+.fa-linkedin:before {
+  content: "\eaca";
+}
+// Xing icon
+.fa-xing:before {
+  content: "\ead4";
+}
+
