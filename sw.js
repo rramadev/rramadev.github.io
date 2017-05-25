@@ -2,7 +2,7 @@ var CACHE_NAME = 'rramadev-site-cache';
 var urlsToCache = [
   '/',
   '/index.html',
-  'src/assets/css/style.min.css',
+  'src/assets/css/styles.min.css',
   'src/assets/js/app.js',
   'src/assets/js/particles.min.js',
   'src/assets/fonts/fontawesome-webfont.woff',
