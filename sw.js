@@ -1,17 +1,51 @@
-var CACHE_NAME = 'site-cache';
+var CACHE_NAME = 'rramadev-site-cache';
 var urlsToCache = [
-  '/'
+  '/',
+  '/index.html',
+  'src/assets/css/style.min.css',
+  'src/assets/js/app.js',
+  'src/assets/js/particles.min.js',
+  'src/assets/fonts/fontawesome-webfont.woff',
+  'src/assets/img/avatar.jpg',
+  'src/assets/img/avatarbg.jpg',
+  'src/assets/img/projectbg1.jpg',
+  'src/assets/img/projectbg2.jpg',
+  'src/assets/img/projectbg3.jpg',
+  'src/assets/img/logo/angularlogo.png',
+  'src/assets/img/logo/bootstraplogo.png',
+  'src/assets/img/logo/css3logo.png',
+  'src/assets/img/logo/html5logo.png',
+  'src/assets/img/logo/jquerylogo.png',
+  'src/assets/img/logo/jslogo.png',
+  'src/assets/img/logo/nodelogo.png',
+  'src/assets/img/logo/tslogo.png'
 ];
 
 self.addEventListener('install', function(event) {
+  console.log('[ServiceWorker] Install');
   // Perform install steps
   event.waitUntil(
     caches.open(CACHE_NAME)
     .then(function(cache) {
-      console.log('Opened cache');
+      console.log('[ServiceWorker] Caching app shell');
       return cache.addAll(urlsToCache);
     })
   );
+});
+
+self.addEventListener('activate', function(e) {
+  console.log('[ServiceWorker] Activate');
+  e.waitUntil(
+    caches.keys().then(function(keyList) {
+      return Promise.all(keyList.map(function(key) {
+        if (key !== cacheName) {
+          console.log('[ServiceWorker] Removing old cache', key);
+          return caches.delete(key);
+        }
+      }));
+    })
+  );
+  return self.clients.claim();
 });
 
 self.addEventListener('fetch', function(event) {
