@@ -11,7 +11,7 @@ A personal github website using:
 - particles.js - A lightweight JavaScript library
 - Progressive Web App - meets the key principles of a PWA
 
-*You can see a running demo* [here](http://rramadev.github.io).
+*You can see a running demo* [here](https://rramadev.github.io).
 
 ## Commands
 
