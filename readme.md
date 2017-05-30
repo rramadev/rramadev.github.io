@@ -17,10 +17,12 @@ A personal github website using:
 
 command | description
 --- | ---
-`npm run start`| sass build, start concurrently watch sass and lite-server
+`npm run start`| build, start concurrently watch sass and lite-server
 `npm run server`| start lite-server
+`npm run build`| sass build and clean unused css styles
 `npm run build:sass`| sass build
 `npm run watch:sass`| watch sass
+`npm run clean:css`| clean unused css styles
 
 ## Installation
 

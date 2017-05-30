@@ -4,27 +4,32 @@
   "author": "rramadev",
   "description": "rramadev.github.io Website",
   "license": "MIT",
-  "keywords": ["rramadev"],
+  "keywords": [
+    "rramadev"
+  ],
   "homepage": "https://rramadev.github.io",
   "repository": {
     "type": "git",
     "url": "https://github.com/rramadev/rramadev.github.io.git"
   },
-  "bugs": { 
-    "url" : "https://github.com/rramadev/rramadev.github.io/issues"
+  "bugs": {
+    "url": "https://github.com/rramadev/rramadev.github.io/issues"
   },
   "scripts": {
-    "start": "npm run build:sass && concurrently \"npm run watch:sass\" \"npm run server\"",
+    "start": "npm run build && concurrently \"npm run watch:sass\" \"npm run server\"",
     "server": "lite-server -c bs-config.json",
+    "build": "npm run build:sass && npm run clean:css",
     "build:sass": "node-sass --output-style compressed src/assets/css/sass/styles.scss src/assets/css/styles.min.css",
-    "watch:sass": "node-sass --watch --output-style compressed src/assets/css/sass/styles.scss src/assets/css/styles.min.css"
+    "watch:sass": "node-sass --watch --output-style compressed src/assets/css/sass/styles.scss src/assets/css/styles.min.css",
+    "clean:css": "purifycss src/assets/css/styles.min.css src/assets/js/particles.min.js index.html --min --info --out src/assets/css/styles.min.css"
   },
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6"
   },
   "devDependencies": {
+    "concurrently": "^3.4.0",
     "lite-server": "^2.3.0",
     "node-sass": "^4.5.3",
-    "concurrently": "^3.4.0"
+    "purify-css": "^1.2.2"    
   }
 }
