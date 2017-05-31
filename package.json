@@ -18,7 +18,7 @@
   "scripts": {
     "start": "npm run build && concurrently \"npm run watch:sass\" \"npm run server\"",
     "server": "lite-server -c bs-config.json",
-    "build": "npm run build:sass && npm run clean:css",
+    "build": "npm run build:sass",
     "build:sass": "node-sass --output-style compressed src/assets/css/sass/styles.scss src/assets/css/styles.min.css",
     "watch:sass": "node-sass --watch --output-style compressed src/assets/css/sass/styles.scss src/assets/css/styles.min.css",
     "clean:css": "purifycss src/assets/css/styles.min.css src/assets/js/particles.min.js index.html --min --info --out src/assets/css/styles.min.css"
