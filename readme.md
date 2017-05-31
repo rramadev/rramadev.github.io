@@ -11,6 +11,8 @@ A personal github website using:
 - particles.js - A lightweight JavaScript library
 - Progressive Web App - meets the key principles of a PWA
 
+This site contains a collection of personal projects, including sample applications of web front-end and back-end technologies.
+
 *You can see a running demo* [here](https://rramadev.github.io).
 
 ## Commands
@@ -32,5 +34,4 @@ command | description
     This installs the dependencies as defined in the package.json file.
 
 3) Type: `npm start`
-    This launches the builder to compile the sass files to css and wait for changes.
-    It also starts the lite-server and launches the browser to run the application.
+    This launches the builder to compile the sass files to css, clean the minified css file and wait for changes. It also starts the lite-server and launches the browser to run the application.

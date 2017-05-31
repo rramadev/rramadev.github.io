@@ -131,7 +131,7 @@ html, body {
 .card-deck {    
   .card {
     @include box-shadow(-60px 0px 100px -90px $black-color, 60px 0px 100px -90px $black-color); 
-    max-width: 300px;
+    max-width: 280px;
     min-width: 250px;    
     margin: 30px 10%;    
   }
