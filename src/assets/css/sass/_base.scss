@@ -48,10 +48,15 @@ html, body {
   float: right;
   top: 10px;  
   position: fixed;
-  padding-top: 0;
+  min-width: 256px;
+  padding-top: 0; 
   overflow: hidden;
   text-align: center;
   background-color: rgba($grey-color, 0.2);
+  -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;      
+    transition: all 0.5s ease-out;
   @media #{$medium-and-up} {
     top: 60px;
     left: auto;
@@ -63,9 +68,14 @@ html, body {
     height: 135px;
   }
   .avatar {
-    position: relative;
-    top: -50px;
-    margin-bottom: -50px;
+    position: absolute;
+    top: 75px;
+    left: 80px;    
+    // margin-bottom: -50px;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;      
+    transition: all 0.5s ease-out;
     img {
       @include border-radius(50%);
       @include box-shadow(5px 5px 10px #888888); 
@@ -78,11 +88,19 @@ html, body {
       }                    
     }
   }
+  .avatar-min {
+    top: 5px;
+    left: 5px;
+    max-width: 75px;
+    max-height: 75px; 
+  }
   .info {
-    margin: 5px 0;
+    // position: absolute;
+    // top: 150px;    
+    margin-top: 50px;
     padding: 4px 8px 0px;
     @media #{$medium-and-up} {
-      margin: 10px 0;
+      // margin-top: 50px;
     } 
     .title {
       margin-bottom: 8px;
@@ -108,7 +126,12 @@ html, body {
       height: 32px;
       line-height: 20px;
     }
-  }    
+  }  
+  .avatar-off {
+    // visibility: hidden;
+    display: none;
+    opacity: 0;
+  }  
 }
 
 /* Section Projects */
