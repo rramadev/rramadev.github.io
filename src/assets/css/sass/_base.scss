@@ -48,7 +48,7 @@ html, body {
   float: right;
   top: 10px;  
   position: fixed;
-  min-width: 256px;
+  min-width: 250px;
   padding-top: 0; 
   overflow: hidden;
   text-align: center;
@@ -61,6 +61,7 @@ html, body {
     top: 60px;
     left: auto;
     right: 10%;
+    min-width: 290px;
   }
   .avcardheader {
     background: url("#{$images-path}avatarbg-min.jpg");      
