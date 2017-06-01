@@ -71,7 +71,7 @@ html, body {
   .avatar {
     position: absolute;
     top: 75px;
-    left: 80px;    
+    left: 90px;    
     // margin-bottom: -50px;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
@@ -88,6 +88,9 @@ html, body {
         max-height: 100px; 
       }                    
     }
+    @media #{$medium-and-up} {
+      left: 95px;  
+    } 
   }
   .avatar-min {
     top: 5px;
@@ -98,10 +101,10 @@ html, body {
   .info {
     // position: absolute;
     // top: 150px;    
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 4px 8px 0px;
     @media #{$medium-and-up} {
-      // margin-top: 50px;
+       margin-top: 50px;
     } 
     .title {
       margin-bottom: 8px;
@@ -117,7 +120,7 @@ html, body {
   }
   .bottom {
     padding: 0 20px;
-    margin-bottom: 10px;
+    margin: 10px 0;
     @media #{$medium-and-up} {
       margin-bottom: 17px;
     }
@@ -125,7 +128,7 @@ html, body {
       border-radius: 50%;
       width: 32px;
       height: 32px;
-      line-height: 20px;
+      line-height: 1.5rem;
     }
   }  
   .avatar-off {
@@ -169,7 +172,8 @@ html, body {
     }   
   }
   .card-header {
-    background-color: $bleen-color-lighter;    
+    background-color: $bleen-color-lighter;   
+    padding: .75rem 0.5rem;    
   }
   .card-footer {
     background-color: $palegreen-color;

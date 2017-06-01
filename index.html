@@ -17,7 +17,7 @@
   <!-- Tile icon for Windows -->
   <meta name="msapplication-TileImage" content="src/assets/img/logo/launcher-144-min.jpg">
   <meta name="msapplication-TileColor" content="#23507a">
-  <!-- Global Css -->
+  <!-- Custom Css -->
   <link rel="stylesheet" href="src/assets/css/styles.min.css" />
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -67,10 +67,11 @@
         <div class="card">
           <div class="card-header">
             <img alt="Html5" width="32px" height="32px" src="src/assets/img/logo/html5logo.png">
-            <img alt="Css3" width="32px" height="32px" src="src/assets/img/logo/css3logo.png">
-            <img alt="Javascript" width="32px" height="32px" src="src/assets/img/logo/jslogo.png">
-            <img alt="Jquery" width="32px" height="32px" src="src/assets/img/logo/jquerylogo.png">
+            <img alt="Css3" width="23px" height="32px" src="src/assets/img/logo/css3logo.png">
+            <img alt="Sass" width="43px" height="32px" src="src/assets/img/logo/sasslogo.png">
             <img alt="Bootstrap" width="32px" height="32px" src="src/assets/img/logo/bootstraplogo.png">
+            <img alt="Javascript" width="32px" height="32px" src="src/assets/img/logo/jslogo.png">
+            <img alt="Jquery" width="64px" height="32px" src="src/assets/img/logo/jquerylogo.png">            
           </div>
           <img class="card-img-top img-fluid" src="src/assets/img/projectbg1-min.jpg" width="299px" height="200px" alt="Project 1 image">
           <div class="card-block">
@@ -93,20 +94,21 @@
         <div class="card">
           <div class="card-header">
             <img alt="Html5" width="32px" height="32px" src="src/assets/img/logo/html5logo.png">
-            <img alt="Css3" width="32px" height="32px" src="src/assets/img/logo/css3logo.png">
+            <img alt="Css3" width="23px" height="32px" src="src/assets/img/logo/css3logo.png">
+            <img alt="Sass" width="43px" height="32px" src="src/assets/img/logo/sasslogo.png">
             <img alt="Javascript" width="32px" height="32px" src="src/assets/img/logo/jslogo.png">
             <img alt="Typescript" width="32px" height="32px" src="src/assets/img/logo/tslogo.png">
-            <img alt="Angular" width="32px" height="32px" src="src/assets/img/logo/angularlogo.png">
+            <img alt="Angular" width="29px" height="32px" src="src/assets/img/logo/angularlogo.png">
           </div>
           <img class="card-img-top img-fluid" src="src/assets/img/projectbg2-min.jpg" width="299px" height="200px" alt="Project 2 image">
           <div class="card-block">
             <h3 class="card-title">
               <a href="" target="_blank">
-                Angular 2.x Demo
+                Store Manager App v.1.0.0
               </a>
             </h3>
             <p class="card-text">
-              Store Manager App v.1.0.0
+              Angular 2.x Demo
             </p>
             <a href="#" class="btn btn-warning btn-sm disabled" target="_blank">Info</a>
             <a href="#" class="btn btn-info btn-sm disabled">Live demo</a>
@@ -117,19 +119,24 @@
         </div>
 
         <div class="card">
-          <div class="card-header">
-            <img alt="Html5" width="32px" height="32px" src="src/assets/img/logo/html5logo.png">
-            <img alt="Css3" width="32px" height="32px" src="src/assets/img/logo/css3logo.png">
+          <div class="card-header">            
+            <img alt="Typescript" width="32px" height="32px" src="src/assets/img/logo/tslogo.png">
+            <img alt="Angular" width="29px" height="32px" src="src/assets/img/logo/angularlogo.png">
+            <img alt="Node" width="64px" height="32px" src="src/assets/img/logo/nodelogo.png">
+            <img alt="Ionic" width="90px" height="32px" src="src/assets/img/logo/ioniclogo.png">
           </div>
           <img class="card-img-top img-fluid" src="src/assets/img/projectbg3-min.jpg" width="299px" height="200px" alt="Project 3 image">
           <div class="card-block">
             <h3 class="card-title">
               <a href="" target="_blank">
-                Project 3
+               Membergrapes App v.1.0.0
               </a>
             </h3>
             <p class="card-text">
-              Working on it...
+              Angular 4.x / Ionic 3.x Demo
+            </p>
+            <p class="card-text">
+              Working on it... 
             </p>
             <a href="#" class="btn btn-warning btn-sm disabled" target="_blank">Info</a>
             <a href="#" class="btn btn-info btn-sm disabled">Live demo</a>
@@ -142,7 +149,7 @@
         <div class="card">
           <div class="card-header">
             <img alt="Html5" width="32px" height="32px" src="src/assets/img/logo/html5logo.png">
-            <img alt="Css3" width="32px" height="32px" src="src/assets/img/logo/css3logo.png">
+            <img alt="Css3" width="23px" height="32px" src="src/assets/img/logo/css3logo.png">
           </div>
           <img class="card-img-top img-fluid" src="src/assets/img/projectbg1-min.jpg" width="299px" height="200px" alt="Project 4 image">
           <div class="card-block">
@@ -180,17 +187,17 @@
   <script src="src/assets/js/app.js"></script>
   <!--PWA-->
   <script>
-    // if ('serviceWorker' in navigator) {
-    //   window.addEventListener('load', function() {
-    //     navigator.serviceWorker.register('/sw.js').then(function(registration) {
-    //       // Registration was successful
-    //       console.log('[ServiceWorker] registration successful with scope: ', registration.scope);
-    //     }).catch(function(err) {
-    //       // registration failed :(
-    //       console.log('[ServiceWorker] registration failed: ', err);
-    //     });
-    //   });
-    // }
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js').then(function(registration) {
+          // Registration was successful
+          console.log('[ServiceWorker] registration successful with scope: ', registration.scope);
+        }).catch(function(err) {
+          // registration failed :(
+          console.log('[ServiceWorker] registration failed: ', err);
+        });
+      });
+    }
   </script>
 </body>
 
