@@ -15,6 +15,9 @@
   "bugs": {
     "url": "https://github.com/rramadev/rramadev.github.io/issues"
   },
+  "engines": {
+    "node": "6.11.0"
+  },
   "scripts": {
     "start": "npm run build && concurrently \"npm run watch:sass\" \"npm run server\"",
     "server": "lite-server -c bs-config.json",
@@ -24,12 +27,12 @@
     "clean:css": "purifycss src/assets/css/styles.min.css src/assets/js/particles.min.js index.html --min --info --out src/assets/css/styles.min.css"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.6"
+    "bootstrap": "4.0.0-alpha.6"
   },
   "devDependencies": {
-    "concurrently": "^3.4.0",
-    "lite-server": "^2.3.0",
-    "node-sass": "^4.5.3",
-    "purify-css": "^1.2.2"    
+    "concurrently": "3.4.0",
+    "lite-server": "2.3.0",
+    "node-sass": "4.5.3",
+    "purify-css": "1.2.2"    
   }
 }

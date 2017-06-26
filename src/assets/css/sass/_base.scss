@@ -139,7 +139,7 @@ html, body {
 }
 
 /* Section Projects */
-#projects {
+.projects {
   position: relative;
   margin-top: 350px;
   @media #{$medium-and-up} {
@@ -147,7 +147,23 @@ html, body {
   }
   .title {
     margin-left: 10%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    @media #{$medium-and-up} {
+      margin-left: 0px;
+    }
+  }
+}
+
+/* Section Test Projects */
+.testProjects {
+  position: relative;
+  margin-top: 20px;
+  @media #{$medium-and-up} {
+    margin-top: 30px;
+  }
+  .title {
+    margin-left: 10%;
+    margin-bottom: 20px;
     @media #{$medium-and-up} {
       margin-left: 0px;
     }
